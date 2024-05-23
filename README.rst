@@ -1,9 +1,16 @@
+PyWeDo - a WeDo Python Library
+--------------
+
+The WeDo Python library provides a simple interface for interacting with LEGO's WeDo devices, which are a set of educational robotics tools and sensors connected via USB.
+
+This library allows developers to control motors, read data from tilt and distance sensors, and much more.
+
 About the WeDo
 --------------
 
 The `Lego WeDo`_ is a tethered-over-USB sensing and robotics toolkit produced by Lego for the educational market.
 
-It's gotten lots of press, including a favorable review on the One Laptop Per Child blog, on `deployments and training in Peru`_.
+It's gotten lots of press, including a favorable review on the One Laptop Per Child (OLPC) blog, on `deployments and training in Peru`_.
 
 It's supported by Scratch(on Windows and OSX) and by Lego's proprietary software(on Windows.)
 
@@ -20,10 +27,6 @@ Requirements
 Installation
 ------------
 
-From pypi:
-
-    pip install wedo
-
 From the source tree:
 
     ./setup.py install
@@ -32,19 +35,12 @@ From the source tree:
 How to Use it
 -------------
 
-    >>> from wedo import WeDo
-    >>> wd = WeDo()
-    # Activating the first motor full forward:
-    >>> wd.motor_a = 100
-    # Activating the second motor half speed/force backward:
-    >>> wd.motor_b = -50
-    # Current value of the tilt sensor:
-    >>> wd.tilt
-    # Current distance value in meters of the distance sensor:
-    >>> wd.distance
+<in progress>
 
 Contributors
 ------------
+
+`Jhonatan David Arias`_
 
 `Ian Daniher`_
 
@@ -65,6 +61,7 @@ Tony Forster
 .. _`Philo's Awesome Page`: http://www.philohome.com/pf/LEGO_Power_Functions_RC.pdf
 .. _`Guillaume Binet`: https://github.com/gbin
 .. _`Ian Daniher`: https://github.com/itdaniher
+.. _`Jhonatan David Arias`: https://github.com/JhonatanDczel
 .. _`Walter Bender`: https://github.com/walterbender
 .. _`Joshua Coxwell`: https://github.com/JCoxwell
 .. _`Alan Aguiar`: https://github.com/alanjas
