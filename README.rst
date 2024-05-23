@@ -1,5 +1,6 @@
+
 PyWeDo - a WeDo Python Library
---------------
+------------------------------
 
 The WeDo Python library provides a simple interface for interacting with LEGO's WeDo devices, which are a set of educational robotics tools and sensors connected via USB.
 
