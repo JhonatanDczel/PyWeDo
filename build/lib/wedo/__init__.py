@@ -32,7 +32,6 @@ def scan_for_devices():
             devices.append(dev)
     except usb.core.USBError as e:
         logger.error("Could not find a connected WeDo device: %s" % str(e))
-    print("Devices:", devices)
     return devices
 
 class WeDo(object):
@@ -93,7 +92,6 @@ class WeDo(object):
         """Read 64 bytes from the WeDo's endpoint, but only
         return the last eight."""
         try:
-            
             return self.endpoint.read(64)[-8:]
         except usb.core.USBError as e:
             logger.exception("Could not read from WeDo device")
@@ -119,7 +117,6 @@ class WeDo(object):
         respectively.
         """
         rawData = self.getRawData()
-        print(rawData)
         if rawData is not None:
             sensorData = {rawData[3]: rawData[2], rawData[5]: rawData[4]}
         else:
